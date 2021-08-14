@@ -12,7 +12,7 @@
     "compile": "antd-tools run compile",
     "dist": "antd-tools run dist",
     "pre-publish": "antd-tools run compile && antd-tools run dist",
-    "pub": "npm publish"
+    "pub": "npm publish --registry=https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "react": "^16.14.0",
@@ -48,7 +48,10 @@
     "antd",
     "my-antd-plus"
   ],
-  "author": "",
+  "author": {
+    "name": "white-bear",
+    "email": "cwh2407606301@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thinkingc/my-antd-plus/issues"
