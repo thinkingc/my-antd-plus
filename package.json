@@ -1,0 +1,57 @@
+{
+  "name": "my-antd-plus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/my-lib-cjs.js",
+  "module": "dist/my-lib-es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c",
+    "compile": "antd-tools run compile",
+    "dist": "antd-tools run dist",
+    "pre-publish": "antd-tools run compile && antd-tools run dist",
+    "pub": "npm publish"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "antd": "^3.22.0",
+    "prop-types": "^15.7.2"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-jsx": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/plugin-transform-runtime": "7.1.0",
+    "@babel/preset-react": "^7.10.0",
+    "@babel/runtime": "7.1.2",
+    "antd": "^3.22.0",
+    "eslint": "^7.32.0",
+    "prop-types": "^15.7.2",
+    "rollup": "^2.56.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkingc/my-antd-plus.git"
+  },
+  "keywords": [
+    "antd",
+    "my-antd-plus"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkingc/my-antd-plus/issues"
+  },
+  "homepage": "https://github.com/thinkingc/my-antd-plus#readme"
+}
